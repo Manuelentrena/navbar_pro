@@ -24,7 +24,7 @@ a {
 }
 
 .barra {
-  background-color: #0063b1;
+  background-color: #00b14e;
 }
 
 .padre i {
@@ -74,8 +74,7 @@ a {
 .submenu {
   background-color: #4c4a48;
   max-height: 0px;
-  transition: max-height 1.3s;
-  transition-timing-function: ease;
+  transition: max-height 1.3s ease;
 }
 
 @media (min-width: 768px) {
@@ -86,6 +85,58 @@ a {
     display: block;
   }
   .enlace:hover .submenu {
-    max-height: 200px;
+    max-height: 150px;
+  }
+}
+
+.submenu a:hover {
+  background-color: #73706d;
+}
+
+/* Información  */
+.fa-question-circle {
+  color: #73706d;
+  font-size: 100px;
+}
+.transition {
+  width: 100px;
+  transition: width 2s;
+  margin: 300px auto;
+  display: flex;
+  /* align-items: center; */
+}
+
+.info {
+  margin-left: 30px;
+  max-height: 40px;
+  overflow: hidden;
+  color: #ffffff;
+  transition: color 4s;
+  font-size: 35px;
+}
+.transition:hover {
+  width: 800px;
+}
+
+.transition:hover .info {
+  color: #73706d;
+}
+@media (max-width: 768px) {
+  .transition {
+    margin: 200px auto;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+  }
+  .fa-question-circle {
+    font-size: 50px;
+  }
+  .info {
+    margin-left: 10px;
+    font-size: 20px;
+    max-height: 50px;
+  }
+  .transition:hover {
+    width: 300px;
   }
 }
