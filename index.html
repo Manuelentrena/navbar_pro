@@ -4,6 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Navbar con aspecto Profesional</title>
+    <!-- Style.css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/331c3fb2f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <nav class="barra">
+      <ul class="navegacion">
+        <li class="enlace" id="perfil">
+          <a href="#perfil" class="padre">
+            <i class="far fa-user"></i>Mi perfil
+          </a>
+          <nav class="submenu">
+            <a href="#">Posts</a>
+            <a href="#">Imágenes</a>
+            <a href="#">Videos</a>
+          </nav>
+        </li>
+        <li class="enlace" id="mensajes">
+          <a href="#mensajes" class="padre">
+            <i class="far fa-envelope"></i>Mensajes
+          </a>
+          <nav class="submenu">
+            <a href="#">Ver Todos</a>
+            <a href="#">Redactar</a>
+          </nav>
+        </li>
+        <li class="enlace" id="grupos">
+          <a href="#grupos" class="padre">
+            <i class="fas fa-user"></i>Grupos
+          </a>
+          <nav class="submenu">
+            <a href="#">Ver Todos</a>
+            <a href="#">Buscar</a>
+          </nav>
+        </li>
+        <li class="enlace" id="preferencias">
+          <a href="#preferencias" class="padre">
+            <i class="far fa-envelope"></i>Preferencias
+          </a>
+          <nav class="submenu">
+            <a href="#">Configuraciónn</a>
+            <a href="#">Lenguaje</a>
+          </nav>
+        </li>
+      </ul>
+    </nav>
+  </body>
 </html>
